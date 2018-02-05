@@ -15,4 +15,6 @@ az aks install-cli
 az aks get-credentials --resource-group=myK8sCluster --name=myK8sCluster
 
 # Proxy to the dashboard
+# If you're on Windows, you will need to make sure that the path to kubectl is added to the environment variables PATH, for eg - C:\Program Files (x86)\kubectl.exe
 az aks browse --resource-group=myK8sCluster --name=myK8sCluster
+
