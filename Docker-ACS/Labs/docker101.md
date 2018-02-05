@@ -108,6 +108,8 @@ docker run -p 4000:80 myfirstapp
 You should see a notice that Python is serving your app at http://0.0.0.0:80. But that message is coming from inside the container, which doesn’t know you mapped port 80 of that container to 4000, making the correct URL http://localhost:4000.
 Go to that URL in a web browser to see the display content served up on a web page, including “Hello World” text, the container ID, and the Redis error message.
 
+Now we will create a new container with redis called "some-redis" and then ```--link``` (link) it to the Redis<insert link to Redis here> with our app ```myfirstapp```.
+
 ### Now with Redis 
 ```bash
 docker run --rm --name some-redis -d redis
