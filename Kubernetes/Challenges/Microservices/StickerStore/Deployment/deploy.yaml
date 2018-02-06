@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
       - name: webstore
-        image: torosent/webstore:1.0.0
+        image: hackregistery.azurecr.io/webstore:1.0.0
         ports:
         - containerPort: 3000
         env:
@@ -49,7 +49,7 @@ spec:
     spec:
       containers:
       - name: printingservice
-        image: torosent/printingservice:1.0.0
+        image: hackregistery.azurecr.io/printingservice:1.0.0
         imagePullPolicy: Always
         env:
           - name: SBConnectionString
@@ -90,7 +90,7 @@ spec:
     spec:
       containers:
       - name: orderservice
-        image: torosent/orderservice:1.0.0
+        image: hackregistery.azurecr.io/orderservice:1.0.0
         ports:
         - containerPort: 80
         env:
@@ -127,7 +127,7 @@ spec:
     spec:
       containers:
       - name: statuservice
-        image: torosent/statusservice:1.0.0
+        image: hackregistery.azurecr.io/statusservice:1.0.0
         ports:
         - containerPort: 80
         env:
